@@ -1,0 +1,79 @@
+
+
+<div class="container">
+
+
+<div class="form-wrapper">
+    <h2>Ajouter un Produit</h2>
+    <div class="mobile-from">
+<div class="mb-3">
+  <label for="reference" class="form-label">Reference</label>
+  <input
+    type="text"
+    class="form-control"
+    id="reference"
+    placeholder="Reference"
+    name="reference"
+    [(ngModel)]="product.reference"
+  />
+</div>
+<div class="mb-3">
+  <label for="designation" class="form-label">Designation</label>
+  <input
+    type="text"
+    class="form-control"
+    id="designation"
+    placeholder="Designation"
+    name="designation"
+    [(ngModel)]="product.designation"
+  />
+</div>
+<div class="mb-3">
+  <label for="prix" class="form-label">Prix</label>
+  <input type="text" class="form-control" id="prix" placeholder="Prix" [(ngModel)]="product.prix" />
+</div>
+<div class="mb-3">
+  <label for="marque" class="form-label">Marque</label>
+  <input type="text" class="form-control" id="marque" placeholder="marque" [(ngModel)]="product.marque" />
+</div>
+<div class="mb-3">
+    <label for="qtestock" class="form-label" >Quantite Stock</label>
+    <input
+      type="text"
+      class="form-control"
+      id="qtestock"
+      placeholder="qtestock"
+      name="qtestock"
+     [(ngModel)]="product.qtestock"
+
+    />
+  </div>
+  <div class="mb-3">
+    <label for="qtestock" class="form-label">Sours Categorie</label>
+    <input
+      type="text"
+      class="form-control"
+      id="scategorie"
+      placeholder="scategorie"
+      [(ngModel)]="product.scategorieID"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="imgart" class="form-label">Image Article</label>
+    <input
+      type="text"
+      class="form-control"
+      id="imgart"
+      placeholder="imgart"
+      [(ngModel)]="product.imageart"
+    />
+  </div>
+  <div>
+    <button type="button" (click)="ajouterProduit()" class="btn btn-success">Ajouter</button>
+  </div>
+  <div>
+    <button type="button" class="btn btn-danger" routerLink="/products/listarticlestable" >Annuler</button>
+  </div>
+</div>
+</div>
+</div>

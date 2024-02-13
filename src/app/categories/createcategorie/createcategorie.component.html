@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="form-wrapper">
+    <h2>Ajouter une Categorie</h2>
+    <div class="mobile-from">
+      <div class="mb-3">
+        <label for="nomCategorie" class="form-label">Nom Categorie</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nomCategorie"
+          placeholder="nom Categorie"
+          [(ngModel)]="categorie.nomcategorie"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="imageCategorie" class="form-label">Image Categorie</label>
+        <input
+          type="text"
+          class="form-control"
+          id="imageCategorie"
+          placeholder="image Categorie"
+          [(ngModel)]="categorie.imagecategorie"
+        />
+      </div>
+
+      <button type="button" class="btn btn-success me-5" (click)="ajouterCategorie()">Ajouter</button>
+      <button
+        type="button"
+        class="btn btn-danger"
+        routerLink="/products/listarticlestable"
+      >
+        Annuler
+      </button>
+    </div>
+  </div>
+</div>
